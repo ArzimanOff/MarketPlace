@@ -8,6 +8,10 @@
 <hr>
 <h4>Информация о товаре</h4>
 
+<#list images as img>
+    <br> <img src="/images/${img.id}" height="120px">
+</#list>
+
 <br> <b>Название товара: </b>${product.title}
 <br> <b>Описание товара: </b>${product.description}
 <br> <b>Цена товара: </b>${product.price}

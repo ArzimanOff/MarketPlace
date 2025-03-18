@@ -36,7 +36,7 @@
 <hr>
 
 <h3>Создать новый товар</h3>
-<form action="/product/create" method="post">
+<form action="/product/create" method="post" enctype="multipart/form-data">
     <label>
         Название товара:
         <input type="text" name="title"/>
@@ -60,6 +60,19 @@
     <label>
         Имя продавца:
         <input type="text" name="author"/>
+    </label><br>
+
+    <label>
+        Первое фото:
+        <input type="file" name="file1">
+    </label><br>
+    <label>
+        Второе фото продавца:
+        <input type="file" name="file2">
+    </label><br>
+    <label>
+        Третье фото:
+        <input type="file" name="file3">
     </label><br>
 
     <input type="submit" value="Сохранить товар">
