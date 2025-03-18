@@ -8,6 +8,15 @@
 <hr>
 <h4>Товары со всей России</h4>
 
+<form action="/" method="get">
+    <label>
+        Поиск:
+        <input type="text" name="title" placeholder="Введите название товара"/>
+    </label><br>
+
+    <input type="submit" value="Поиск">
+</form>
+
 <#list products as product>
 
     <div>
@@ -18,6 +27,9 @@
 
         <a href="/product/${product.id}">Подробнее</a>
     </div>
+
+    <#else>
+    <h3>Список товаров пуст</h3>
 
 </#list>
 
